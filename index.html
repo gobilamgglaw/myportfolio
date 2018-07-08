@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+<div class="wrapper">
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-brand">
+                <li><a href="#">John Joseph Florina</a></li>
+        </ul>
+        <ul class="navbar-nav">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">My Projects</a></li>
+            <li><a href="#">My Resume</a></li>
+        </ul>
+    </nav>
+</div>
+<div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">About Me</a>
+    <a href="#">Contact Me</a>
+    <a href="#">My Projects</a>
+    <a href="#">My Resume</a>
+</div>
+<div id="main"class="content">
+        <img  class="myface" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.0-9/16998951_279170119179496_1283353761706427483_n.jpg?_nc_cat=0&oh=378390f9781d1172cb3160aca9d10a02&oe=5B9FF903">
+        <h1>A Junior Web Developer</h1>
+        <hr>
+        <p>HTML/CSS | Bootstrap | JavaScript | ReactJS | NodeJS | Laravel | SQL | Photoshop | Sony Vegas </p>
+</div>
+<div>
+        <footer>
+            <br>
+                <p class="power">Powered by ReactJS</p>
+        </footer>
+</div>
+</body>
+<script>
+    function openSlideMenu() {
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+    }
+    function closeSlideMenu() {
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+    }
+</script>
+</html>
